@@ -61,9 +61,9 @@ import net.minecraftforge.items.ItemHandlerHelper;
 public class ItemToolUpgrade extends CommonSubtypeItem {
 
 	public static enum Upgrade {
-		ExE("area", .7f, 1, 1, 1, "Mines 3x3 and increases attack range", tools(true)), //
-		SxS("area", .4f, 1, 2, 2, "Mines 5x5 and increases attack range", tools(true)), //
-		VEIN("area", .3f, 1, 0, 0, "Mines a vein of similiar blocks", tools(false)), //
+		ExE("area", 1f, 1, 1, 1, "Mines 3x3 and increases attack range", tools(true)), //
+		SxS("area", .7f, 1, 1, 1, "Mines 5x5 and increases attack range", tools(true)), //
+		VEIN("area", .7f, 1, 0, 0, "Mines a vein of similiar blocks", tools(false)), //
 		AUTOMINE("area", .2f, 1, 0, 2, "Mines ores from the deep", "pickaxe"), //
 		//
 		MAGNET("transport", 1, 0, 0, "Dropped items head to player", tools(true)), //
@@ -76,11 +76,11 @@ public class ItemToolUpgrade extends CommonSubtypeItem {
 		HEAL("effect", 1, 1, 0, "Heals the player when dealing damage", tools(true)), //
 		//
 		DAMAGE("support", 3, 1, 0, "Increases attack damage", tools(true)), //
-		SPEED("support", 1.75f, 3, 0, 1, "Increases dig speed", tools(false)), //
+		SPEED("support", 2.25f, 3, 0, 1, "Increases dig speed", tools(false)), //
 		LUCK("support", 3, 1, 2, "Increases looting and fortune", tools(true)), //
 		SILK("support", 1, 0, 2, "Silk touch", tools(false)), //
 		XP("support", 3, 1, 0, "Increases XP from mobs", "sword"), //
-		REPAIR("support", 3, 0, 0, "Repairs your tool frequently (doesn't require XP)", tools(true)), //
+		REPAIR("support", 12, 0, 0, "Repairs your tool frequently (doesn't require XP)", tools(true)), //
 		REACH("support", 1, 0, 0, "Increases reach", tools(false)), //
 		ENERGY("support", 1, 0, 0, "Tools are chargeable", tools(true)), //
 		//

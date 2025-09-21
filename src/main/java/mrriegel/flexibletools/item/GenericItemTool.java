@@ -45,7 +45,7 @@ public class GenericItemTool extends CommonItemTool implements ITool {
 
 	public GenericItemTool(String name, String... classes) {
 		super(name, ToolHelper.newMat, classes);
-		setMaxDamage(getMaxDamage() * toolClasses.size());
+		setMaxDamage(getMaxDamage() * toolClasses.size() * 4);
 		setCreativeTab(CTab.TAB);
 	}
 
@@ -56,17 +56,17 @@ public class GenericItemTool extends CommonItemTool implements ITool {
 
 	@Override
 	public boolean isEnchantable(ItemStack stack) {
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
-		return false;
+		return true;
 	}
 
 	@Override
